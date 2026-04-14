@@ -43,9 +43,10 @@ Supported File Formats
 ## Resources
 
 - **Product page:** [Syncfusion&reg; Word Framework](https://www.syncfusion.com/document-processing/word-framework/net?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples)
-- **Documentation:** [Split Word Documents](https://help.syncfusion.com/file-formats/docio/word-document/split-word-documents?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples)
+- **Documentation:** [Getting Started with Word Library](https://help.syncfusion.com/document-processing/word/word-library/net/getting-started)
 - **GitHub Examples:** [Syncfusion&reg; Word library examples](https://github.com/SyncfusionExamples/DocIO-Examples?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples)
 - **Online demo:** [Syncfusion&reg; Word library - Online demos](https://ej2.syncfusion.com/aspnetcore/Word/SalesInvoice#/material3?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples)
+- **Blog:** [AI-Powered Word Translation in C#](https://www.syncfusion.com/blogs/post/ai-powered-word-translation-in-csharp)
 
 ## Support and feedback
 - For any other queries, reach our [Syncfusion&reg; support team](https://support.syncfusion.com/agent/tickets/create?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples) or post the queries through the [community forums](https://www.syncfusion.com/forums?utm_source=github&utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples).
