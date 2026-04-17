@@ -12,12 +12,12 @@ namespace AI_WordDocumentSummarization
         static string? openAImodel = "gpt-4o-mini";
         static async Task Main()
         {
-            await ExecuteTranslation();
+            await ExecuteSummarization();
         }
         /// <summary>
-        /// Execute translation of Word document.
+        /// Execute summarization of Word document.
         /// </summary>
-        private async static Task ExecuteTranslation()
+        private async static Task ExecuteSummarization()
         {
             Console.WriteLine("AI Powered Word Summarizer");
 
@@ -51,12 +51,12 @@ namespace AI_WordDocumentSummarization
 
             try
             {
-                // Translate Word content
+                // Summarize Word content
                 await SummarizeWordContent(wordFilePath, sentencesCount);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Failed to read Word document: {ex.StackTrace}");
+                Console.WriteLine($"Failed to summarize Word document: {ex.StackTrace}");
                 return;
             }
         }
@@ -66,13 +66,13 @@ namespace AI_WordDocumentSummarization
             // Open the Existing Word document
             WordDocument wordDocument = new WordDocument(wordFilePath);
 
-            // Define the system prompt that instructs OpenAI how to translate
-            // Includes rules to preserve formatting, placeholders, and avoid paraphrasing
+            // Define the system prompt that instructs OpenAI how to summarize the content,
+            // including the desired number of sentences in the summary.
             string systemPrompt = @"You are a professional document summarizer integrated into an DocIO automation tool.
                                     Your job is to summarize the word document content into the" + sentencesCount + " sentences";
             string originalText = wordDocument.GetText();
             wordDocument.Close();
-            // Call OpenAI to translate the text and Store the translated result in the dictionary for reuse
+            // Call OpenAI to summarize the text and store the summarized result
             string summarizedText = await AskOpenAIAsync(openAIApiKey, openAImodel, systemPrompt, originalText);
 
             WordDocument summarizedDocument = new WordDocument();
